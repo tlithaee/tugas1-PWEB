@@ -1,4 +1,3 @@
-/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
@@ -10,7 +9,7 @@
   --title-color: hsl(0, 0%, 95%);
   --text-color: hsl(0, 0%, 70%);
   --text-color-light: hsl(0, 0%, 60%);
-  --body-color: hsl(0, 0%, 0%);
+  --body-color: hsl(0, 0%, 7%);
   --container-color: hsl(0, 0%, 8%);
 
   /*========== Font and typography ==========*/
@@ -38,7 +37,7 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1535px) {
   :root {
-    --biggest-font-size: 5.5rem;
+    --biggest-font-size: 3rem;
     --h1-font-size: 2.5rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -53,7 +52,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* background: linear-gradient(to right, #1d375e, #691989); */
 }
 
 html {
@@ -70,6 +68,7 @@ input {
 
 body {
   background-color: var(--body-color);
+  /* background: linear-gradient(to right, #131742, #341241); */
 }
 
 button,
@@ -133,6 +132,15 @@ img {
     z-index: var(--z-fixed);
 }
 
+.header-line {
+  width: 100%;
+  height: 7px; 
+  background-image: linear-gradient(to right, #1b258f, #6c2189);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
 .nav{
     height: var(--header-height);
     display: flex;
@@ -144,6 +152,7 @@ img {
     color: var(--title-color);
     font-family: var(--second-font);
     font-weight: var(--font-semi-bold);
+    font-size: larger;
 }
 
 .nav__toggle,
@@ -160,7 +169,7 @@ img {
     position: fixed;
     top: -100%;
     left: 0;
-    background-color: hsla(0, 0%, 32%, 0.133);
+    background-color: hsla(0, 0%, 16%, 0.133);
     width: 100%;
     padding-block: 4rem;
     backdrop-filter: blur(24px);
@@ -193,16 +202,122 @@ img {
 }
 
 /* Add blur to header */
-
+.blur-header::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, .3);
+  backdrop-filter: blur(24px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 /* Active link */
 
 
 /*=============== HOME ===============*/
+.home{
+  position: relative;
+}
 
+/* .home__bg{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home__shadow{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, 0) 58%, hsl(0, 0%,0%));
+} */
+
+.home__container{
+  position: relative;
+  padding-top: 3rem;
+  row-gap: 3rem;
+}
+
+.home__data{
+  text-align: center;
+}
+
+.home__title{
+  font-size: var(--biggest-font-size);
+  margin-bottom: 1rem;
+}
+
+.home__desc{
+  margin-bottom: 2rem;
+  color: var(--title-color);
+}
+
+.home__cards{
+  grid-template-columns: 270px;
+  justify-content: center;
+}
+
+.home__card{
+  position: relative;
+  overflow: hidden;
+}
+
+.home__card-img{
+  transition: transform .4s;
+}
+
+.home__card-shadow{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, 0) 50%, hsl(0, 0%, 0%)125%);
+}
+
+.home__card-title{
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-size: var(--h3-font-size);
+  z-index: 1;
+}
+
+/* .home__card:hover .home__card-img{
+  transform: scale(1.2);
+} */
 
 /*=============== BUTTON ===============*/
+/* .button{
+  background-color: #9093b4;
+  padding: 1.25rem 1.5rem;
+  color: var(--title-color);
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  font-family: var(--second-font);
+  font-weight: var(--font-semi-bold);
+  backdrop-filter: blur(24px);
+}
 
+.button i{
+  font-size: 1.28rem;
+  transition: transfor, .4s;
+  font-weight: initial;
+}
+
+.button:hover i{
+  transform: translate(.25rem);
+} */
 
 /*=============== ABOUT ===============*/
 
