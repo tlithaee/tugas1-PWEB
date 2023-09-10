@@ -234,8 +234,8 @@ img {
 
 .home__title{
   font-size: var(--biggest-font-size);
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .home__desc{
@@ -280,7 +280,7 @@ img {
 
 /*=============== BUTTON ===============*/
 .button {
-  /* color: transparent;  */
+  color: #ffffff; 
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
@@ -305,17 +305,23 @@ img {
 /*=============== ABOUT ===============*/
 
 
-/*=============== POPULAR ===============*/
+/*=============== GALLERY ===============*/
 
 
-/*=============== EXPLORE ===============*/
-
-
-/*=============== JOIN ===============*/
+/*=============== OTHERS ===============*/
 
 
 /*=============== FOOTER ===============*/
 
+.footer__container{
+  position: relative;
+}
+
+.footer__content{
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  justify-items: center;
+}
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
@@ -347,7 +353,6 @@ img {
 }
 
 /* Show Scroll Up */
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -414,32 +419,26 @@ img {
     grid-template-columns: repeat(2,240px);
   }
 
-  .about__container{
+  /* .about__container{
     grid-template-columns: repeat(2, 350px);
     align-items: center;
-  }
+  } */
 
-  .about__data,
+  /* .about__data,
   .about__data .section__title{
     text-align: initial;
-  }
+  } */
 }
 
 /* For large devices */
-/* @media screen and (min-width: 1149px) {
-  .nav__close,
-  .nav__toggle{
-    display: none;
-  }
-  .nav__list{
-    flex-direction: row;
-    column-gap: 4rem;
-  }
-} */
-
 @media screen and (min-width: 1245px) {
   .home__container{
     margin-inline: auto;
+  }
+
+  .nav__list{
+    flex-direction: row;
+    column-gap: 4rem;
   }
 
   .section{
@@ -452,7 +451,6 @@ img {
 
   .home__container{
     grid-template-columns: initial;
-    /* justify-content: initial; */
     row-gap: 4rem;
     padding-top: 0.5rem;
   }
@@ -478,10 +476,5 @@ img {
   .nav__close,
   .nav__toggle{
     display: none;
-  }
-
-  .nav__list{
-    flex-direction: row;
-    column-gap: 4rem;
   }
 }
