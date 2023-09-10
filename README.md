@@ -1,3 +1,4 @@
-berikut adalah tugas untuk PWEB
+#Tugas 1 PWEB
 
-. . . (otw nnti nyusul ygy)
+Untuk Tugas 1 ini saya membuat portofolio menggunakan HTML, CSS dan JS.
+
