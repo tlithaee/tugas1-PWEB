@@ -8,5 +8,4 @@ PC :
 <img src="assets/img/pc.png">
 
 Mobile :
-<img src="assets/img/hp.jpg">
-<img src="assets/img/hp1.jpg">
+<img src="assets/img/hp2.jpg">
