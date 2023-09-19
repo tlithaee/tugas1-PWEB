@@ -149,10 +149,22 @@ img {
 }
 
 .nav__logo{
-    color: var(--title-color);
+    /* color: var(--title-color); */
     font-family: var(--second-font);
     font-weight: var(--font-semi-bold);
-    font-size: larger;
+    font-size: x-large;
+    -webkit-text-stroke: 0.2px #ffffff;
+    color: transparent;
+    background: url(img/Group\ 5.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back{
+  100%{
+    background-position: 200px 0;
+  }
 }
 
 .nav__toggle,
