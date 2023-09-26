@@ -4,14 +4,6 @@
 :root {
   --header-height: 5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --title-color: hsl(0, 0%, 0%);
-  --text-color: hsl(0, 0%, 0%);
-  --text-color-light: hsl(0, 0%, 60%);
-  --body-color: hsl(0, 0%, 7%);
-  --container-color: hsl(0, 0%, 8%);
-
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
@@ -197,7 +189,7 @@ img {
 }
 
 .home__desc{
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   color: var(--title-color);
 }
 
@@ -225,8 +217,8 @@ img {
 
 .home__card-capt{
   /* position: fixed; */
-  left: 1rem;
-  bottom: 1rem;
+  /* left: 1rem;
+  bottom: 1rem; */
   font-size: var(--smaller-font-size);
   z-index: 1;
 }
@@ -284,6 +276,7 @@ img {
   .home__container{
     margin-inline: auto;
   }
+
 
   .blur-header::after{
     backdrop-filter: blur(25px);
