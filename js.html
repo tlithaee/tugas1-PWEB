@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .operasi{
+        margin-top: 10px;
+    }
+    
+    body{
+        background-color: rgb(56, 81, 222);
+    }
+
+   
+
+</style>
+<body>
+    <div>
+        <h1>
+            Kalkulator Mini
+        </h1>
+        <div class="input">
+            <input id="x">
+            <input id="y">
+        </div>
+       <div class="operasi">
+            <button id="tambah" onclick="tambah()">
+                +
+            </button>
+            <button id="kurang" onclick="kurang()">
+                -
+            </button>
+            <button id="kali" onclick="kali()">
+                x
+            </button>
+            <button id="bagi" onclick="bagi()">
+                /
+            </button>
+       </div>
+        <div>
+            <p>
+                Hasil :
+            </p>
+            <p id="hasil">
+    
+            </p>3
+        </div>
+        
+    </div>
+</body>
+<script>
+    var x = "string";
+
+    if(true){
+        var x = "string2";
+    }
+
+    function tambah(x,y){
+        var x = parseInt(document.getElementById("x").value);
+        var y = parseInt(document.getElementById("y").value);
+        var result = x+y;
+        var hasil = document.getElementById("hasil");
+        hasil.innerHTML = result;
+    }
+
+    function kurang(x,y){
+        var x = parseInt(document.getElementById("x").value);
+        var y = parseInt(document.getElementById("y").value);
+        var result = x-y;
+        var hasil = document.getElementById("hasil");
+        hasil.innerHTML = result;
+    }
+
+    function kali(x,y){
+        var x = parseInt(document.getElementById("x").value);
+        var y = parseInt(document.getElementById("y").value);
+        var result = x*y;
+        var hasil = document.getElementById("hasil");
+        hasil.innerHTML = result;
+    }
+
+    function bagi(x,y){
+        var x = parseInt(document.getElementById("x").value);
+        var y = parseInt(document.getElementById("y").value);
+        var result = x/y;
+        var hasil = document.getElementById("hasil");
+        hasil.innerHTML = result;
+    }
+
+</script>
+
+</html>
